@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+// Company:        IIS @ ETHZ - Federal Institute of Technology               //
+//                                                                            //
+// Engineers:      Lei Li    lile@iis.ee.ethz.ch                              //
+//                                                                            //
+// Additional contributions by:                                               //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+// Create Date:    30/12/2021                                                 //
+// Design Name:                                                               //
+// Module Name:                                                               //
+// Project Name:                                                              //
+// Language:       SystemVerilog                                              //
+//                                                                            //
+// Description:                                                               //
+//                                                                            //
+// Revision Date:                                                             //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+//                                                                            //
+////////////////////////////////////////////////////////////////////////////////
+
+// Download the UVM 1.1 and 1.2 class reference manuals and user guides
+   http://accellera.org/downloads/standards/uvm
+
+// Mentor offers the tool UVM Framework that creates an immediately useful UVM environment, while you are still ramping up on the details of UVM
+
+// Follow a guide to help you navigate the jungle
+   http://VerificationAcedemy.com/cookbook/
+
+
+   // multiple sequences in sequence calls
+   // Also sequencer can handle or arbitrate between multiple sequences
+
+   // See the paper on verification academy
+   // From simulation to emulation- A fully reusable UVM Famewwork
