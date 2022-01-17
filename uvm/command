@@ -1,0 +1,13 @@
+# Following command compiles and simulates, at time zero. The task run_test (present in top.sv) features the test name from the command line by +UVM_TESTNAME=<test_name> argument. It looks up testname in the factory and tells the factory to construct the object
+
+# run.f contains packages, interface and top module. Specify the name of test that you want to run by +UVM_TESTNAME
+# Check separate command for compile, optimize and simulate
+
+# UVM_INFO tx_test.sv(82) @ 0: uvm_test_top [tx_test] [INFO MESSAGE] Test message with verbosity NONE
+# You can shorten the displayed message by removing file name and line number by switch +define+UVM_REPORT_DISABLE_FILE_LINE. In above line tx_test.sv is file name
+# You can also change default verbosity value by switch +UVM_VERBOSITY
+# In raise and drop objection there are messages like "End tx_sequence" but these messages are not printed to print such messages in raise and drop objections, you can use +UVM_OBJECTION_TRACE switch to print these message in the log.
+
+# xrun -clean -f run.f +UVM_TESTNAME=hello_test
+
+xrun -clean -f ./compile_file/run.f -svseed random +UVM_TESTNAME=tx_test +UVM_VERBOSITY=UVM_LOW +define+UVM_REPORT_DISABLE_FILE_LINE +uvm_set_config_int=uvm_test_top,base_address,23 +UVM_OBJECTION_TRACE
